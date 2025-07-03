@@ -9,3 +9,4 @@ public class totalmarks {
         System.out.println("total marks:"+total);
     }
 }
+           
