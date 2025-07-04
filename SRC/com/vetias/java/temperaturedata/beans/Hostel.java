@@ -3,7 +3,7 @@ public class Hostel extends Building {
     private int numberOfRooms;
     private boolean isMessOpen;
 
-    public Hostel(int numberOfRooms, boolean isMessOpen) {
+    public Hostel (int numberOfRooms, boolean isMessOpen) {
         this.numberOfRooms = numberOfRooms;
         this.isMessOpen = isMessOpen;
     }
