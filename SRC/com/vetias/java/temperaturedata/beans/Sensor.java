@@ -1,5 +1,5 @@
-package SRC.com.vetias.java.temperaturedata.beans;
 
-public class Sensor {
-    
+
+public interface Sensor{
+    public float getReading();
 }

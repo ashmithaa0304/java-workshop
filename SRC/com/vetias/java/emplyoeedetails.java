@@ -1,5 +1,4 @@
 public class emplyoeedetails {
-    public class EmplyoeesDetailsArray {
    public static void main(String[] args) {
       String[][] employees=new String[5][2];
       employees[0][0] = "40000";
@@ -19,4 +18,3 @@ public class emplyoeedetails {
    }
 }   
 
-}
