@@ -1,9 +1,9 @@
 
-public class AcademicBuilding extends Building{
+public class Academicbuilding extends Building{
     private boolean hasLibraryOpen;
     private boolean isAuditoriumOpen;
 
-    public AcademicBuilding(boolean hasLibraryOpen, boolean isAuditoriumOpen) {
+    public Academicbuilding(boolean hasLibraryOpen, boolean isAuditoriumOpen) {
         this.hasLibraryOpen = hasLibraryOpen;
         this.isAuditoriumOpen = isAuditoriumOpen;
     }
