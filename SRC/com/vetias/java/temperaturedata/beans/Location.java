@@ -1,54 +1,79 @@
-package SRC.com.vetias.java.temperaturedata.beans;
 
 public class Location {
-   private String name;
-   private double latitude;
-   private String longitude;
-   private String description;
-   private String country;
-   private String city;
-   private String address;
-   private String post1code;
+    public static void main(String[] args) {
+        
+    Location location = new Location("Vet Tindhl", 40.785091, -73.968285, "Erode", "10024", "123-456-7890");
+        System.out.println(location);
+    }
+    private String name;
+    private double latitude;
+    private double longitude;
+    private String address;
+    private String postalCode;
+    private String contact;
 
+    public Location(String name, double latitude, double longitude, String address, String postalCode, String contact) {
+        this.name = name;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.address = address;
+        this.postalCode = postalCode;
+        this.contact = contact;
+    }
 
+    public String getName() {
+        return name;
+    }
 
-public String getName() {
-   return name;
-}
-public void setName(String aName) {
-   name = aName;
-}
-public String getLatitude() {
-   return latitude;
-}
-public void setLatitude(String aLatitude) {
-   latitude = aLatitude;
-}
-public String getlongitude() {
-   return longitude;
-}
-public void setlongitude(String aDescription) {
-   description = aDescription;
-}
-public String getdescription() {
-   return description;
-}
-public void setcountry(String aCountry) {
-    country = aCountry;
-}
-public void getcountry() {
-    return Country;
-}
-public void setCity(String aCity) {
-    city = aCity;
-}
-public void getcity() {
-    return city;
-}
-public void setAddress(String aAddress) {
-    address = aAddress;
-}
-public void getaddress() {
-    return address;
-}
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+
+    @Override
+    public String toString() {      
+        return "Location{" +
+                "name='" + name + '\'' +
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
+                ", address='" + address + '\'' +
+                ", postalCode='" + postalCode + '\'' +
+                ", contact='" + contact + '\'' +
+                '}';
+    }
+    
 }
