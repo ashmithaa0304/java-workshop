@@ -10,7 +10,12 @@ public class WordCountTest {
     public void testwordcount() {
     WordCount wordcount = newWordCount.Count();
      int count = WordCount.Count("this program shows" );
-    Assertions.assertEquals(10);
+    Assertions.assertEquals(10); 
 }
 @Test
+public void testAnotherString() {
+    WordCount wordCount = new WordCount();
+    int count = wordCount.Count("Ashmitha");
+    Assertions.assertEquals(3, count);
+}
 }
